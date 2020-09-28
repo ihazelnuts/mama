@@ -1,46 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:wght@100;200;900&family=Parisienne&family=Tangerine:wght@400;700&display=swap');
 
 .masthead{
-	height: 100vh;
-	background:linear-gradient(to bottom,rgba(0,0,0,.8) 100%, rgba(0,0,0,.4) 50%),url('img/bg1.jpg');
-	background-size: cover;
-	background-position: 13% 25%;
+  height: 100vh;
+  background:linear-gradient(to bottom,rgba(0,0,0,.8) 100%, rgba(0,0,0,.4) 50%),url('img/bg1.jpg');
+  background-size: cover;
+  background-position: 13% 25%;
 }
 
 .amatic{
-	font-family: 'Amatic SC', cursive;
+  font-family: 'Amatic SC', cursive;
 }
 .tangerine{
-	font-family: 'Tangerine', cursive;
+  font-family: 'Tangerine', cursive;
 }
 .paris{
-	font-family: 'Parisienne', cursive;
+  font-family: 'Parisienne', cursive;
 }
 
 .headline{
-	font-size: 150px;
-	color: #f2a002;
+  font-size: 150px;
+  color: #f2a002;
 }
 .sub-headline{
-	font-size: 50px;
+  font-size: 50px;
 }
 
 .ma-img{
-	max-width: 300px;
+  max-width: 300px;
+}
+.ma{
+  transition: .1s;
 }
 
 
 .pulsate-fwd {
-	-webkit-animation: pulsate-fwd 0.5s ease-in-out infinite both;
-	        animation: pulsate-fwd 0.5s ease-in-out infinite both;
+  -webkit-animation: pulsate-fwd 0.5s ease-in-out infinite both;
+          animation: pulsate-fwd 0.5s ease-in-out infinite both;
 }
 .wobble-ver-left {
-	-webkit-animation: wobble-ver-left 0.8s both;
-	        animation: wobble-ver-left 0.8s both;
+  -webkit-animation: wobble-ver-left 0.8s both;
+          animation: wobble-ver-left 0.8s both;
 }
 .ping {
-	-webkit-animation: ping 0.8s ease-in-out infinite both;
-	        animation: ping 0.8s ease-in-out infinite both;
+  -webkit-animation: ping 0.8s ease-in-out infinite both;
+          animation: ping 0.8s ease-in-out infinite both;
 }
 
 /* ----------------------------------------------
@@ -198,6 +201,20 @@
     -webkit-transform: scale(2.2);
             transform: scale(2.2);
     opacity: 0;
+  }
+}
+
+@media (max-width: 768px){
+  .headline{
+    font-size: 58px;
+    padding-top: 20px;
+  }
+  .sub-headline {
+    font-size: 28px;
+    padding-top: 20px;
+  }
+  .ma-img{
+    max-width: 200px;
   }
 }
 
